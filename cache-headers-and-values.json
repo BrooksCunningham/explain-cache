@@ -1,0 +1,4 @@
+{
+  "pragma" : "some-value",
+  "cache-control" : "no-store"
+}

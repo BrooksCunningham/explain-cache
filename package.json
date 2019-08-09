@@ -1,0 +1,12 @@
+{
+  "name": "explain-cache",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Brooks Cunningham",
+  "devDependencies": {
+    "electron": "^6.0.1"
+  }
+}
