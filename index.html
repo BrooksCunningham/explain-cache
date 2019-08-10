@@ -12,6 +12,7 @@
     <script type="text/javascript" src="./page-load.js"></script>
     <script type="text/javascript">
       getHeadersAndValues()
+      updateHtmlWithValues()
     </script>
     <!--
     <script type="text/javascript">
@@ -22,7 +23,7 @@
     <br><br>
     <br>
     Response Headers:
-    <button onclick="myFunction()">Click this button</button>
+    <button onclick="updateHtmlWithCacheExplained()">Click this button</button>
 
     <!--
     Response Headers <input type="text" name="n1" id="n1" onkeyup="sync()" size="128" /><br>
@@ -34,5 +35,9 @@
 
   <br>
   <p id="demo">Click me.</p>
+  <br><br><br>
+  <h2>Here is what the caching thing does.</h2>
+  <ul id="explain_area">Get ready for the explainer.</ul>
+
   </body>
 </html>
