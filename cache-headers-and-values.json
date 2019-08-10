@@ -1,4 +1,5 @@
-{
-  "pragma" : "some-value",
-  "cache-control" : "no-store"
+{ "Headers" : [
+  { "Name" : "pragma", "Details" : "no-cache", "URL" : "place1" },
+  { "Name" : "cache-control", "Details" : "no-store", "URL" : "place2" }
+]
 }

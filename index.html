@@ -3,12 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello Cache!</title>
+
   </head>
   <body>
     <h1>Hello Cache!</h1>
+    <ul>
+    </ul>
+    <script type="text/javascript" src="./page-load.js"></script>
+    <script type="text/javascript">
+      getHeadersAndValues()
+    </script>
+    <!--
+    <script type="text/javascript">
+       myFunction();
+    </script>
+    -->
+    <input type="text" name="input_headers"
+    <br><br>
+    <br>
+    Response Headers:
+    <button onclick="myFunction()">Click this button</button>
+
+    <!--
+    Response Headers <input type="text" name="n1" id="n1" onkeyup="sync()" size="128" /><br>
+
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
-  <script src="page-load.js"></script>
+    -->
+
+  <br>
+  <p id="demo">Click me.</p>
   </body>
 </html>
