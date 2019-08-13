@@ -1,5 +1,6 @@
 { "Headers" : [
-  { "Name" : "pragma", "Details" : "no-cache", "URL" : "place1" },
-  { "Name" : "cache-control", "Details" : "no-store", "URL" : "place2" }
+  { "Name" : "pragma", "Details" : "no-cache", "URL" : "https://tools.ietf.org/html/rfc7234#section-5.4" },
+  { "Name" : "cache-control", "Details" : "no-store", "URL" : "https://tools.ietf.org/html/rfc5861" },
+  { "Name" : "vary", "Details" : "content-encoding", "URL" : "https://tools.ietf.org/html/rfc7234#section-4.1" }
 ]
 }

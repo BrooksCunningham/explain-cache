@@ -19,11 +19,19 @@
        myFunction();
     </script>
     -->
-    <input type="text" name="input_headers"
-    <br><br>
+    <input type="text" name="input_headers"/><br><br>
     <br>
     Response Headers:
     <button onclick="updateHtmlWithCacheExplained()">Click this button</button>
+
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained()">pragma</button>
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained()">cache-control</button>
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained()">vary</button>
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained()">break everything</button>
 
     <!--
     Response Headers <input type="text" name="n1" id="n1" onkeyup="sync()" size="128" /><br>
@@ -37,7 +45,7 @@
   <p id="demo">Click me.</p>
   <br><br><br>
   <h2>Here is what the caching thing does.</h2>
-  <ul id="explain_area">Get ready for the explainer.</ul>
+  <ul id="explain_area"><h2>Get ready for the explainer.</h2></ul>
 
   </body>
 </html>
