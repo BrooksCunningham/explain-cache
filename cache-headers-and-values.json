@@ -1,6 +1,6 @@
 { "Headers" : [
   { "Name" : "pragma", "Details" : "no-cache", "URL" : "https://tools.ietf.org/html/rfc7234#section-5.4" },
-  { "Name" : "cache-control", "Details" : "no-store", "URL" : "https://tools.ietf.org/html/rfc5861" },
-  { "Name" : "vary", "Details" : "content-encoding", "URL" : "https://tools.ietf.org/html/rfc7234#section-4.1" }
+  { "Name" : "cache-control", "Details" : "HTTP [RFC2616] requires that caches \"respond to a request with the   most up-to-date response held... that is appropriate to the request    ,\"   although \"in carefully considered circumstances\" a stale response is   allowed to be returned.  This document defines two indepen    dent Cache-   Control extensions that allow for such control, stale-if-error and   stale-while-revalidate.   The stale-if-error HTTP Cach    e-Control extension allows a cache to   return a stale response when an error -- e.g., a 500 Internal Server   Error, a network segment,     or DNS failure -- is encountered, rather   than returning a \"hard\" error.  This improves availability.   The stale-while-revalidate HTT    P Cache-Control extension allows a   cache to immediately return a stale response while it revalidates it   in the background, thereby hi    ding latency (both in the network and on   the server) from clients.", "URL" : "https://tools.ietf.org/html/rfc5861" },
+  { "Name" : "vary", "Details" : " When a cache receives a request that can be satisfied by a stored response that has a Vary header field, it MUST NOT use that response unless all of the selecting header fields nominated by the Vary header field match in both the original  request (i.e., that associated with the stored response), and the presented request.", "URL" : "https://tools.ietf.org/html/rfc7234#section-4.1" }
 ]
 }

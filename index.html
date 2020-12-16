@@ -3,13 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Explain Cache</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1740016799221875",
-    enable_page_level_ads: true
-  });
-</script>
   </head>
   <body>
     <h1>Learn about HTTP caching and cache control headers!</h1>
@@ -24,8 +17,14 @@
     <script type="text/javascript">
        myFunction();
     </script>
+
+    <input type="text" name="input_headers" size="64" style="font-size:18px;height:200px;"> </input>
     -->
-    <input type="text" name="input_headers"/><br><br>
+    <textarea name="input_headers" cols="80" rows="20">Cache-Control: no-cache, no-store
+Connection: close
+Content-Length: 857
+Content-Type: text/html
+vary: user-agent</textarea><br><br>
     <br>
     Response Headers:
     <button onclick="updateHtmlWithCacheExplained()">Click this button</button>
@@ -39,16 +38,12 @@
     <br><br>
     <button onclick="updateHtmlWithCacheExplained()">break everything</button>
 
-    <!--
-    Response Headers <input type="text" name="n1" id="n1" onkeyup="sync()" size="128" /><br>
 
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    -->
 
   <br>
-  <p id="demo">Click me.</p>
+  <p id="demo">Click me.</p><br><br><br>
+  <h2>Caching details based on the response headers</h2>
+  <ul id="caching_explain_area">Cached details.</ul>
   <br><br><br>
   <h2>Here is what the caching thing does.</h2>
   <ul id="explain_area"><h2>Get ready for the explainer.</h2></ul>
