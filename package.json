@@ -7,6 +7,6 @@
   },
   "author": "Brooks Cunningham",
   "devDependencies": {
-    "electron": "^6.0.1"
+    "electron": "^7.2.4"
   }
 }
