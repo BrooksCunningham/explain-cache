@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Explain Cache</title>
+
+  </head>
+  <body class="text-center text-white bg-dark">
+
+    <ul>
+    </ul>
+    <script type="text/javascript" src="./page-load.js"></script>
+    <script type="text/javascript">
+      getHeadersAndValues()
+      updateHtmlWithValues()
+    </script>
+    <!--
+    <script type="text/javascript">
+       myFunction();
+    </script>
+
+    <input type="text" name="input_headers" size="64" style="font-size:18px;height:200px;"> </input>
+    -->
+    <h1>Learn about HTTP caching and cache control headers.</h1>
+    <h1>Paste your HTTP response headers here.</h1>
+    <textarea name="input_headers" cols="80" rows="12">
+Cache-Control: no-cache, no-store, max-age=600
+Connection: close
+Content-Length: 857
+Content-Type: text/html
+vary: user-agent
+</textarea>
+    <br>
+    <h2>Response Headers:</h2>
+    <button onclick="updateHtmlWithCacheExplained()">Click this button to analyze the headers</button>
+
+    <!--
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained('pragma')">pragma</button>
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained('cache-control')">cache-control</button>
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained('vary')">vary</button>
+    <br><br>
+    <button onclick="updateHtmlWithCacheExplained()">break everything</button>
+    -->
+
+
+  <br>
+  <p id="demo">Click the button.</p><br><br>
+  <h2>Caching details based on the response headers</h2>
+  <ul id="caching_explain_area">Cached details.</ul>
+  <br><br><br>
+  <h2>Here is what the caching thing does.</h2>
+  <ul id="explain_area"><h2>Get ready for the explainer.</h2></ul>
+
+  </body>
+</html>
